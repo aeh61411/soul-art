@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulArt - Create Your Soul Painting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SoulArt</h1>
+            <p>What does your soul look like?</p>
+        </header>
+
+        <main>
+            <div class="form-group">
+                <label for="name">What is your name?</label>
+                <input type="text" id="name" placeholder="e.g., Mohamed">
+            </div>
+
+            <div class="form-group">
+                <label for="description">Talk about yourself. What are your passions, feelings, or dreams?</label>
+                <textarea id="description" rows="4" placeholder="e.g., I'm a lonely beach guy that loves programming..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="emojis">Choose 3 emojis that describe you best:</label>
+                <input type="text" id="emojis" placeholder="e.g., 👨‍💻🌊❤️">
+            </div>
+
+            <div class="form-group">
+                <label for="style">Choose your art style:</label>
+                <select id="style">
+                    <option value="cinematic photo">Cinematic Photo</option>
+                    <option value="anime art style">Anime / Manga</option>
+                    <option value="fantasy digital painting">Fantasy Digital Art</option>
+                    <option value="vibrant abstract art">Abstract & Vibrant</option>
+                    <option value="pixel art">Pixel Art</option>
+                </select>
+            </div>
+
+            <button id="generate-btn">Create My SoulArt</button>
+
+            <div id="result" class="hidden">
+                <h2>Your SoulArt</h2>
+                <div id="art-container">
+                    <p class="loading-text">The universe is painting your soul... please wait.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
